@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body{  
+        box-sizing: border-box;
+     }
+     input[type=text], select, textarea, {
+        width:100%;
+        padding:12px;
+        border: 1px solid black;
+        border-radius; 4px; 
+        box-sizing: border-box; 
+        margin-top: 6px; 
+        margin-bottom; 16px;
+        resize: vertical; 
+    }
+
+     input[type=submit] {
+        font-size: medium;
+        background-color: yellowgreen;
+        color: black;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+     }
+     input[type=submit]:hover {
+         background-color: darkgreen;
+        }
+            
+     .container {
+        border-radius: 5px;
+        background-color:  whitesmoke;
+        padding: 20px;}
+                    
+    </style>
+    </head>
+    <body>
+        <h3> Contact Form</h3>
+         <div class="container">
+         <form action="action_page.php">
+         <label for="fname"> First Name</label><br>
+         <input type="text" id="fname" name="first name" placeholder=" Your name..."> <br>
+         <label for="lname">Last Name</label> <br>
+         <input type="text" id="lname" name="lastname" placeholder="Your last Name..."> <br>
+         <label for="state"> State</label> 
+            <select id="State" name="State"> <br>
+                <option value="MA"> Massachusetts</option>
+                <option value ="CT"> Connecticut </option>
+                <option value="AZ"> Arizona</option>
+                <option value="CA"> California</option>
+                <option value="FL"> Florida</option>
+            </select><br>
+            <label for="comment">Comment</label> <br>
+            <textarea id="comment" name="comment" placeholder="Do you have a question..?" style="height:200px"></textarea> <br>
+
+            <input type="submit" value="Submit">
+        
+   </form>
+   </div>
+   
+</body>
+</html>
