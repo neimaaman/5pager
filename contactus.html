@@ -4,64 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-     body{  
-        box-sizing: border-box;
-     }
-     input[type=text], select, textarea, {
-        width:100%;
-        padding:12px;
-        border: 1px solid black;
-        border-radius; 4px; 
-        box-sizing: border-box; 
-        margin-top: 6px; 
-        margin-bottom; 16px;
-        resize: vertical; 
-    }
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
 
-     input[type=submit] {
-        font-size: medium;
-        background-color: yellowgreen;
-        color: black;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-     }
-     input[type=submit]:hover {
-         background-color: darkgreen;
-        }
-            
-     .container {
-        border-radius: 5px;
-        background-color:  whitesmoke;
-        padding: 20px;}
-                    
-    </style>
-    </head>
-    <body>
-        <h3> Contact Form</h3>
-         <div class="container">
-         <form action="action_page.php">
-         <label for="fname"> First Name</label><br>
-         <input type="text" id="fname" name="first name" placeholder=" Your name..."> <br>
-         <label for="lname">Last Name</label> <br>
-         <input type="text" id="lname" name="lastname" placeholder="Your last Name..."> <br>
-         <label for="state"> State</label> 
-            <select id="State" name="State"> <br>
-                <option value="MA"> Massachusetts</option>
-                <option value ="CT"> Connecticut </option>
-                <option value="AZ"> Arizona</option>
-                <option value="CA"> California</option>
-                <option value="FL"> Florida</option>
-            </select><br>
-            <label for="comment">Comment</label> <br>
-            <textarea id="comment" name="comment" placeholder="Do you have a question..?" style="height:200px"></textarea> <br>
-
-            <input type="submit" value="Submit">
+        <header  id="left" class="bg-slate-200 w-100 p-4 " >
+            <nav>
+                <ul>
+                    <li class="inline m-4 px-4"><a href="">Home</a></li>
+                    <li class="inline m-4 px-4"><a href="">About Us</a></li>
+                    <li class="inline m-4 px-4"><a href="">Services</a></li>
+                    <li class="inline m-4 px-4"><a href="">Log in</a></li>
+                    <li class="inline m-4 px-4"><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+    
+        </header>
         
-   </form>
-   </div>
-   
+        <main>
+            <div id="right" class="bg-[url('paint3.jpg')] h-96 w-full">
+                <h1 class="italic text-center text-7xl pt-20">Let's have a talk</h1>
+            </div>
+
+            <div class="flex  h-full bg-blue-200">
+                <div class="w-1/3 h-96">
+                    <h1 class="text-center">Contact Us</h1>
+                    <form class=" bg-blue-200 pl-8 ">
+                        <br><label class="indent-1"  for="name">Name</label>
+                        <br><input class="rounded-tl-lg  p-1"    type="text" id="name" value="">
+                        <br><label for="email">Email</label>
+                        <br><input class="rounded-tl-lg p-1" type="text" id="email" value="">
+                        <br><label for="">Address</label>
+                        <br><input class="rounded-tl-lg p-1 "  type="text" id="address" value="">
+                        <br><label for="">Message</label>
+                        <br><textarea class="border rounded-lg"  name="" id="" cols="30" rows="10" ></textarea>
+                        <br><input type="submit" value="Submit" class="border border-blue-600 rounded-full w-24 bg-blue-700 px-4 ml-14">
+                    </form>
+                </div>
+
+                <div class="w-1/3 h-96 bg-orange-200  border border-2"></div>                
+
+                <div class="w-1/3 h-96"><img src="map4.jpg" alt=""></div>
+            
+            </div>
+        </main>
+        <footer></footer>
+            
+    
+
 </body>
 </html>
