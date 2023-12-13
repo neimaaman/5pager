@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   
 </head>
-<body>
-    <form class="bg-orange-200">
-        <h1>Sign to your account</h1>
+<body    style="background-image: url('loginimg.jpg');">
+    
+    <form class="bg-slate-200 border  w-80 h-96 text-center mx-auto my-16 ">
+        <h1 class="">Sign in</h1><br>
         <label for="emailorusername"> Email or User name</label><br>
-        <input type="text" id="emailorusername" name="emailorusername"><Br>
+        <input class="rounded-md w-60 p-1"   type="text" id="emailorusername" name="emailorusername"><br>
         <label for="pwd">Password</label><br>
-        <input type="text" id="pwd" name="pwd"><br>
+        <input class="rounded-md w-60 p-1"   type="text" id="pwd" name="pwd"><br>
         <a href="" >Forgot password?</a><br><br>
-        <input type="submit" value="login"><br>
+        <input class="rounded-full bg-green-300 w-24 p-1"  type="submit" value="login"><br><br>
         <!-- is this part of the form or do we have to put it under the closing tag of the form -->
         <div> 
           New to Curious Mind? 
@@ -28,5 +30,6 @@
         
         </ul>
     </footer>
+
 </body>
 </html>
