@@ -3,21 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Sign Up</title>
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body>
-        <div class="mx-auto w-">
-            <!-- mx auto needs a width -->
-        <h1> Sign up</h1>
-        <form class="bg-slate-300">
-        <label class="rounded-md" for="uname">First Name</label><br>
-        <input class="rounded-md" type="text" id="fname" name="fname" ><br>
-        <label class="rounded-md" for="lname">Last Name</label><br>
-        <input class="rounded-md" type="text" id="lname" name="lname"><br>
-        <label class="rounded-md" for ="email"> Email Address</label>
-        <input class="rounded-md" type="text" id="email" name="email"><br>
-        </form>
+    <body class="bg-[url(signimg.jpg)] ">
+        <div class="flex p-64 pr-8">
 
+            <div class=" w-2/5 h-96  bg-blue-100 opacity-50">
+
+               <h1 class="text-center text-2xl mx-32 mt-24">Sign Up</h1> 
+               <p class="text-center mx-32 mt-8">please enter your information<br>and become our part of community</p>
+            </div>
+
+            <div class="w-2/5 h-96 bg-slate-100 ">
+                <!-- mx auto needs a width -->
+            
+                <form class="bg-slate-100 mt-8 text-slate-750">
+                    <label class="rounded-md w-64 p-1 mx-24" for="uname">First Name</label><br>
+                    <input class="rounded-md w-64 p-1 mx-24" type="text" id="fname" name="fname" ><br>
+                    <label class="rounded-md w-64 p-1 mx-24" for="lname">Last Name</label><br>
+                    <input class="rounded-md w-64 p-1 mx-24" type="text" id="lname" name="lname"><br>
+                    <label class="rounded-md w-64 p-1 mx-24" for ="email"> Email Address</label><br>
+                    <input class="rounded-md w-64 p-1 mx-24" type="text" id="email" name="email"><br>
+                    <label class="rounded-md w-64 p-1 mx-24" for="pwd">Password</label><br>
+                    <input class="rounded-md w-64 p-1 mx-24" type="password" id="pwd"><br><br> 
+                    <button class="rounded-md bg-green-300 w-48 p-1 mx-32"type="submit">Sign Up</button>
+                </form>
+            </div>
+
+        </div>    
     </body>
 </html>
